@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>For each function</title>
+    <script src="Jquery/jquery.js"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        #mainDiv {
+            font-family: sans-serif;
+        }
+        
+        .head {
+            min-height: 65px;
+            width: 100%;
+            background-color: #f82f5c;
+            color: #fff;
+            box-shadow: 0px 2px 3px 0px rgba(248, 47, 92, 0.53);
+        }
+        
+        .head h2 {
+            text-align: center;
+            padding-top: 18px;
+        }
+        
+        .buttons-container {
+            padding: 1.5% 1.5%;
+            width: 20%;
+            float: left;
+        }
+        
+        .switch-btn {
+            background: #f82f5c;
+            border: 0 none;
+            border-bottom: 3px solid #e61a1a;
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+            text-align: center;
+            width: 80px;
+            height: 40px;
+            margin-bottom: 10px;
+            outline: none;
+            transition: all .20s ease-in-out;
+        }
+        
+        .switch-btn:hover {
+            background: rgb(66, 1, 15);
+            color: #ffffff;
+            font-weight: 500;
+        }
+        
+        .screens-container {
+            width: 75%;
+            float: left;
+            border-left: 1px solid #f82f5c;
+        }
+        
+        .screen {
+            width: 90%;
+            margin: auto;
+            padding: 1.5% 1.5%;
+            display: none;
+        }
+        
+        hr {
+            width: 115px;
+            margin: 0 auto;
+            border-color: #f82f5c;
+        }
+        
+        .screen h3 {
+            text-align: center;
+            color: #f82f5c;
+            font-weight: 600;
+        }
+        
+        .screen-heading {
+            margin-bottom: 10px;
+        }
+        
+        .screen-body {
+            font-family: verdana, sans-serif;
+            font-size: 15px;
+        }
+        
+        .active {
+            background: rgb(66, 1, 15);
+            color: #ffffff;
+            font-weight: 500;
+        }
+        
+        .screen-body p:nth-child(1) {
+            margin-bottom: 5px;
+            color: #f82f5c;
+            text-decoration: underline;
+        }
+        
+        .entry-field {
+            margin-bottom: 10px;
+        }
+        input{
+            width: 100%;
+            padding: 5px;
+        }
+        .status{
+            width: 98%;
+            margin: auto;
+        }
+        
+
+    </style>
+    <script>
+
+
+    </script>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <div class="head">
+            <h2>Using For Each Function in Jquery</h2>
+        </div>
+        <div class="buttons-container">
+            <div class="entry-field">
+                <input type="text" placeholder="Enter your name" name="user" id="user">
+            </div>
+            <h4 class="status"></h4>
+            <button class="switch-btn active">One</button>
+            <button class="switch-btn">Two</button>
+            <button class="switch-btn">Three</button>
+            <button class="switch-btn">Four</button>
+            <button class="switch-btn">Five</button>
+            <button class="switch-btn">Six</button>
+            <button class="switch-btn">seven</button>
+            <button class="switch-btn">Eight</button>
+        </div>
+        <div class="screens-container">
+            <div class="screen">
+                <div class="screen-heading">
+                    <h3>Screen:1</h3>
+                    <hr>
+                </div>
+                <div class="screen-body">
+                    <p>Using For Each Function in Jquery:1</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+
+            </div>
+            <div class="screen">
+                <div class="screen-heading">
+                    <h3>Screen:2</h3>
+                    <hr>
+                </div>
+                <div class="screen-body">
+                    <p>Using For Each Function in Jquery:2</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+
+            </div>
+            <div class="screen">
+                <div class="screen-heading">
+                    <h3>Screen:3</h3>
+                    <hr>
+                </div>
+                <div class="screen-body">
+                    <p>Using For Each Function in Jquery:3</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+
+            </div>
+            <div class="screen">
+                <div class="screen-heading">
+                    <h3>Screen:4</h3>
+                    <hr>
+                </div>
+                <div class="screen-body">
+                    <p>Using For Each Function in Jquery:4</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                </div>
+
+            </div>
+            <div class="screen">
+                <div class="screen-heading">
+                    <h3>Screen:5</h3>
+                    <hr>
+                </div>
+                <div class="screen-body">
+                    <p>Using For Each Function in Jquery:5</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+
+            </div>
+            <div class="screen">
+                <div class="screen-heading">
+                    <h3>Screen:6</h3>
+                    <hr>
+                </div>
+                <div class="screen-body">
+                    <p>Using For Each Function in Jquery:6</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+
+            </div>
+            <div class="screen">
+                <div class="screen-heading">
+                    <h3>Screen:7</h3>
+                    <hr>
+                </div>
+                <div class="screen-body">
+                    <p>Using For Each Function in Jquery:7</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+
+            </div>
+            <div class="screen">
+                <div class="screen-heading">
+                    <h3>Screen:8</h3>
+                    <hr>
+                </div>
+                <div class="screen-body">
+                    <p>Using For Each Function in Jquery:8</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        window.alert("Please enter your name");
+        $(".screen:eq(0)").show();
+        var numArray = [0];
+        $(".switch-btn").each(function(index, element) {
+            $(this).click(function() {
+                var x = document.getElementById("user").value;
+                if (x == "") {
+                    window.alert("Please enter your name");
+                }
+                if (x != "") {
+                    $(".entry-field").hide();
+                }
+                $(".screen").hide();
+                $(".switch-btn").removeClass("active");
+                $(this).addClass("active");
+                $(".screen:eq(" + index + ")").fadeIn();
+                if (numArray.indexOf(index) == -1) {
+                    numArray.push(index);
+                }
+                if (numArray.length == 8) {
+                    $(".status").text("Hey " + x + " clicked all buttons");
+                    $(".status").css("marginBottom", "10" + "px");
+                }
+
+            });
+        })
+
+    </script>
+</body>
+
+</html>
